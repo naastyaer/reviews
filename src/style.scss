@@ -2,7 +2,7 @@ html {
 	--offset: 10px;
 }
 body{
-    background-image: url(https://www.gtrk-vyatka.ru/uploads/posts/2021-04/1617509085_coffee-2440074_1920.jpg);
+    background-image: url(https://www.gtrk-vyatka.ru/uploads/posts/2021-04/1617509085_coffee-2440074_1920.jpg)
 }
 
 /*как убрать эту границу */
@@ -36,6 +36,10 @@ body{
         text-align: center;
         margin: 0 auto;
         position: relative;
+        @media (min-width: 400px) {
+        width: 300px;
+                
+        }
     }
 
     .reviwe_background{
@@ -59,6 +63,12 @@ body{
         font-family: 'Raleway', sans-serif;
         font-size: 20px;
     }
+    @media (min-width: 400px) {
+        width: 300px;
+        height: 420px;
+                
+        }
+
     }
    
 }
