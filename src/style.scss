@@ -33,21 +33,28 @@ body{
         padding-bottom: 20px;
 
     }
-    
+    @media (min-width: 401px) and (max-width: 768px) {/*планшеты*/
+        
+        justify-content: center;
 
+                    
+    }
+    
 
     h1{
         font-size: 70px;
         margin-top: 20px;
         margin-bottom: 20px;
-
-    
         color: rgb(188, 184, 168);
         font-family: 'Caveat', cursive;
         @media (max-width: 400px) { /*до 400px*/
             font-size: 24px;
             margin-top: 0px;
             
+        }
+        @media (min-width: 401px) and (max-width: 768px) {/*планшеты*/
+            font-size: 20px;
+            margin-top: 0px;          
         }
 
     }
@@ -72,12 +79,12 @@ body{
         padding: 20px;
         background-color: rgb(224, 224, 204);
         width: 500px;
-        height: 420px;
+        height: 400px;
         position: absolute;
         border-radius: 10px; 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         @media (max-width: 400px) {/*до 400px*/
             width: 200px;
             height: 300px;
@@ -85,14 +92,22 @@ body{
             /*background-color: rgb(200, 200, 36);*/
                         
         }
+        @media (min-width: 401px) and (max-width: 768px) {/*планшеты*/
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            
+                        
+        }
         
         &__text{
-        font-size: 28px;
+        font-size: 32px;
         font-family: 'Caveat', cursive;
 
-            @media (max-width: 400px) {/*до 400px*/
+            @media (max-width: 768px) {/*до 768px*/
                     font-size: 18px; 
             } 
+
         }
 
         &__name, &__date{
@@ -111,6 +126,11 @@ h1{
 
     color: rgb(197, 197, 137);
     font-family: 'Caveat', cursive;
+        @media (min-width: 401px) and (max-width: 768px) {/*планшеты*/
+            font-size: 168px;          
+        }
+
+
 }
 .icon_container{
     /*background-color: chartreuse;*/
@@ -119,9 +139,21 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 400px) {/*до 400px*/
+        margin-top: 0px;             
+    }
+    @media (min-width: 401px) and (max-width: 768px) {/*планшеты*/
+        margin-top: 0px;           
+    }
 
     .icon_container__img{
     width: 50px;
+        @media (max-width: 400px) { /*до 400px*/
+            width: 30px;
+        }
+
+
+
     }
     button{
         background-color:  rgb(124, 119, 100);
